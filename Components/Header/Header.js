@@ -1,8 +1,11 @@
+import Container from '@/pages/container'
 import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <Container>
+      Header
+      </Container>
   )
 }
 
