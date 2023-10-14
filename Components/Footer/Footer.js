@@ -14,10 +14,10 @@ const Footer = () => {
   return (
     <div className="bg-blackColor mt-[40px]">
       <Container>
-        <footer class="">
-          <div class=" pt-[60px] mb-[80px] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-3">
+        <footer className="">
+          <div className=" pt-[60px] mb-[80px] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-3">
                 Exclusive
               </h2>
               <div className="flex-col flex space-y-3 text-whiteColor">
@@ -31,9 +31,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left ">
-              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <h2 class="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
+            <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left ">
+              <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 className="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
                   Support
                 </h2>
                 <div className="flex-col flex space-y-3 text-whiteColor">
@@ -44,8 +44,8 @@ const Footer = () => {
                   <Link href="#">+88015-88888-9999</Link>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
-                <h2 class="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
+              <div className="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
+                <h2 className="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
                   Account
                 </h2>
                 <div className="flex-col flex space-y-3 text-whiteColor">
@@ -56,8 +56,8 @@ const Footer = () => {
                   <Link href="#">Shop</Link>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
-                <h2 class="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
+              <div className="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
+                <h2 className="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
                   Quick Link
                 </h2>
                 <div className="flex-col flex space-y-3 text-whiteColor">
@@ -67,8 +67,8 @@ const Footer = () => {
                   <Link href="#">Contact</Link>
                 </div>
               </div>
-              <div class="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
-                <h2 class="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
+              <div className="lg:w-1/4 md:w-1/2 w-full px-[10px] lg:px-[0px]">
+                <h2 className="title-font font-medium text-whiteColor tracking-widest text-[20px] mb-[10px]">
                   Download App
                 </h2>
                 <div className=" text-whiteColor">
@@ -92,10 +92,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="py-[10px]">
-          <p class="text-grayColor text-[16px] text-center tracking-widest">
-                © Copyright Raju 2023.All right reserved
-              </p>
+          <div className="py-[10px]">
+            <p className="text-grayColor text-[16px] text-center tracking-widest">
+              © Copyright Raju 2023.All right reserved
+            </p>
           </div>
         </footer>
       </Container>
