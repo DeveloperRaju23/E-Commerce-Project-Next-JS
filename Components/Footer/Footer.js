@@ -92,18 +92,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="">
-            <div class=" mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-              <p class="text-grayColor text-[16px] text-center sm:text-left">
+          <div class="py-[10px]">
+          <p class="text-grayColor text-[16px] text-center tracking-widest">
                 © Copyright Raju 2023.All right reserved
               </p>
-              <div className="inline-flex sm:ml-auto gap-7 sm:mt-0 mt-2 justify-center sm:justify-start">
-                <Image src={socialImg1} />
-                <Image src={socialImg2} />
-                <Image src={socialImg3} />
-                <Image src={socialImg4} />
-              </div>
-            </div>
           </div>
         </footer>
       </Container>
