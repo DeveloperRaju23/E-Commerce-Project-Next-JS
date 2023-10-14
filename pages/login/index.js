@@ -11,10 +11,9 @@ const Login = () => {
       <div className="">
         <Image className="object-cover " src={loginImg} />
       </div>
-      <div className="me-12">
+      <div className="px-[10px] lg:px-[0px]">
         <ReuseTitle heading2="Log in to Exclusive" />
         <ReuseTitle heading6="Enter your details below" />
-        <div className="">
           <form>
          <span> <input
               className="border-b-2 w-full text-lg pb-[10px]  outline-none"
@@ -42,7 +41,7 @@ const Login = () => {
             <span className="hover:text-secondaryRed">Sign Up</span>
             </Link>
             </div>
-        </div>
+      
       </div>
     </div>
   </div>

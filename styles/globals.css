@@ -8,4 +8,11 @@
      .btnLogin {
         @apply bg-secondaryRed md:py-[10px] md:px-[36px] py-[8px] px-[28px] tracking-wider text-lg   rounded-[5px] text-whiteColor
      }
+     
+     .container{
+      @apply max-w-[1170px] w-full mx-auto border-2
+     }
+     .about{
+      @apply  lg:w-[270px] w-full h-[230px] lg:h-[230px] border-2 rounded-[5px] m-0 p-0 text-center text-grayBlack shadow-sm flex flex-col justify-center
+     }
 }
