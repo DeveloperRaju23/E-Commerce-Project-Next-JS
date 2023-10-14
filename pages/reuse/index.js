@@ -1,6 +1,13 @@
 import React from "react";
 
-const ReuseTitle = ({ heading2, heading6, heading3,heading5, para1, para2 }) => {
+const ReuseTitle = ({
+  heading2,
+  heading6,
+  heading3,
+  heading5,
+  para1,
+  para2,
+}) => {
   return (
     <div>
       <h2 className="text-[22px] md:text-[30px] lg:text-[36px] text-blackColor font-medium">
@@ -13,8 +20,9 @@ const ReuseTitle = ({ heading2, heading6, heading3,heading5, para1, para2 }) => 
         {heading6}
       </h6>
 
-
-        <h5 className="text-secondaryRed  text-[16px] ms-[10px] lg:ms[0px] mb-[10px] border-secondaryRed border-l-[14px]  ps-[10px] font-bold ">{heading5}</h5>
+      <h5 className="text-secondaryRed  text-[16px] ms-[10px] lg:ms[0px] mb-[10px] border-secondaryRed border-l-[14px]  ps-[10px] font-bold ">
+        {heading5}
+      </h5>
 
       <p className="text-[14px] lg:text-[16px] lg:w-[700px] w-full text-blackColor tracking-wider">
         {para1}
