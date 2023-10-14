@@ -35,7 +35,7 @@ const Login = () => {
               placeholder="Password"
             />
           </form>
-          <button className="btnLogin  mt-[20px]">Login</button>
+          <button className="btnLogin w-full mt-[20px]">Login</button>
           <div className="flex justify-center gap-2 mt-[18px] font-normal tracking-wider text-grayBlack cursor-pointer">
             <span>Don't have an account?</span>
             <Link href="signup">

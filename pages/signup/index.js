@@ -80,7 +80,7 @@ const SignUp = () => {
               placeholder="Password"
             />
           </form>
-          <button className="btnLogin  mt-[20px]">Create Account</button>
+          <button className="btnLogin w-full mt-[20px]">Create Account</button>
           <div className="border-2 rounded-[5px] py-[8px] mt-[20px] flex justify-center gap-2">
                <Image src={googleImg} alt="Google Image" />
                <span className="text-[16px] cursor-pointer font-normal tracking-wider">

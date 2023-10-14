@@ -6,6 +6,6 @@
 
 @layer components{
      .btnLogin {
-        @apply bg-secondaryRed md:py-[10px] md:px-[36px] py-[8px] px-[28px] tracking-wider text-lg w-full  rounded-[5px] text-whiteColor
+        @apply bg-secondaryRed md:py-[10px] md:px-[36px] py-[8px] px-[28px] tracking-wider text-lg   rounded-[5px] text-whiteColor
      }
 }
