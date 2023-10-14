@@ -14,7 +14,7 @@ const SignUp = () => {
       <div className="px-[10px] lg:px-[0px]">
         <ReuseTitle heading2="Create an account" />
         <ReuseTitle heading6="Enter your details below" />
-        <div className="">
+        <div className="md:me-12 ">
           <form>
          <span> <input
               className="border-b-2 w-full text-lg pb-[10px]  outline-none"
