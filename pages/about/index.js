@@ -13,10 +13,8 @@ import serviceImg1 from "../../public/Services (2).png"
 import serviceImg2 from "../../public/Services (1).png"
 import serviceImg3 from "../../public/Services.png"
 import serviceImg4 from "../../public/Services4.png"
+import Delivery from "@/Components/Home/Delivery/Delivery";
 
-import delivery1 from "../../public/delivery.png"
-import delivery2 from "../../public/contact.png"
-import delivery3 from "../../public/secourity.png"
 const About = () => {
   const sliderInfo = [
     {
@@ -142,23 +140,7 @@ const About = () => {
          {/* Team Member section ends */}
 
          {/* FREE AND FAST DELIVERY section start  */}
-            <div className='grid grid-cols-1 max-w-[950px] sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[30px] px-[10px] lg:px-[0px] my-[40px] md:my-[60px] lg:my-[100px] mx-auto'>
-                  <div className="flex flex-col justify-center mx-auto text-center">
-                  <Image className="mx-auto" src={delivery1}/>
-                  <h3 className="lg:text-[20px] text-[16px] text-blackColor font-semibold mt-[5px] mb-[5px]">FREE AND FAST DELIVERY</h3>
-                  <p className="text-[14px] text-primaryBlack">Free delivery for all orders over $140</p>
-                  </div>
-                  <div className="flex flex-col justify-center mx-auto text-center">
-                  <Image className="mx-auto" src={delivery2}/>
-                  <h3 className="lg:text-[20px] text-[16px] text-blackColor font-semibold mt-[5px] mb-[5px]">24/7 CUSTOMER SERVICE</h3>
-                  <p className="text-[14px] text-primaryBlack">Friendly 24/7 customer support</p>
-                  </div>
-                  <div className="flex flex-col justify-center mx-auto text-center">
-                  <Image className="mx-auto" src={delivery3}/>
-                  <h3 className="lg:text-[20px] text-[16px] text-blackColor font-semibold mt-[5px] mb-[5px]">MONEY BACK GUARANTEE</h3>
-                  <p className="text-[14px] text-primaryBlack">We reurn money within 30 days</p>
-                  </div>
-            </div>
+         <Delivery/>
          {/* FREE AND FAST DELIVERY section end  */}
     </Container>
   </div>

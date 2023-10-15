@@ -33,7 +33,7 @@ const Category = () => {
 
   return (
     <Container>
-      <div className="mt-[50px]">
+      <div className="pt-[50px]">
         <p className="border "></p>
         <ReuseTitle heading5="Categories" />
         <ReuseTitle heading3="Browse By Category" />

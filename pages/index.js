@@ -3,10 +3,14 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Hero from '@/Components/Home/Hero/Hero'
 import Category from '@/Components/Home/Category/Category'
+import DateData from '@/Components/Home/FlashSales/DateData'
+import Arrival from '@/Components/Home/Arrival/Arrival'
+import Delivery from '@/Components/Home/Delivery/Delivery'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -19,6 +23,9 @@ export default function Home() {
   <div>
       <Hero/>
       <Category/>
+      <DateData/>
+      <Arrival/>
+      <Delivery/>
   </div>
       </main>
     </>

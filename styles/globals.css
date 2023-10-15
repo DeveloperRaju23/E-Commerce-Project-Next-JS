@@ -16,3 +16,11 @@
       @apply  lg:w-[270px] w-full h-[230px] lg:h-[230px] border-2 rounded-[5px] m-0 p-0 text-center text-grayBlack shadow-sm flex flex-col justify-center
      }
 }
+
+.header_blur{
+   z-index: 9;
+   box-shadow: 3px 4px -8px 3px #ddd;
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(35px);
+   color: #fff;
+}
