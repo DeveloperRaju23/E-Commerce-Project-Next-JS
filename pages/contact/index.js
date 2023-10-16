@@ -3,10 +3,11 @@ import Container from '../container'
 import Image from 'next/image'
 import callImg from "../../public/icons-phone.png"
 import emailImg from "../../public/icons-mail.png"
+import MapLocation from './mapLocation'
 const Contact = () => {
   return (
     <Container>
-        <div className='flex flex-col md:flex-row justify-between gap-[10px] mt-[30px]' >
+        <div className='flex flex-col md:flex-row justify-between gap-[10px] mt-[30px] mb-[20px]' >
           <div className='lg:w-[400px]  w-full shadow-md rounded-md px-[40px] py-[40px]'>
              <div className='flex items-center gap-[10px]'>
              <Image src={callImg}/>
@@ -38,6 +39,7 @@ const Contact = () => {
            <button className='btnLogin mt-[15px]'>Send Massage</button>
           </div>
         </div>
+        {/* <MapLocation/> */}
     </Container>
   )
 }

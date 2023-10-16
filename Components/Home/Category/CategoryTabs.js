@@ -1,8 +1,10 @@
 // src/components/CategoryTabs.js
-import React, { useState } from 'react';
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
 const CategoryTabs = ({ categories}) => {
   const [activeCategory, setActiveCategory] = useState([0]);
+
   return (
     <div className="">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-[8px] px-[10px] lg:px[0px]">
@@ -27,7 +29,6 @@ const CategoryTabs = ({ categories}) => {
     </div>
     <div className='py-[100px]'>
       <p>Content for {activeCategory.name} category one here.</p>
-    
     </div>
   </div>
   );

@@ -68,16 +68,16 @@ const BuyNow = () => {
               </div>
               <div className="flex">
                 <div className="flex gap-2">
-                  <button className="border px-4 lg:px-6 py-2 lg:py-3 rounded ">
+                  <button className="border px-4 lg:px-5 py-2 lg:py-3 rounded ">
                     -
                   </button>
-                  <button className="border px-4 lg:px-6 py-2 lg:py-3 rounded ">
+                  <button className="border px-4 lg:px-5 py-2 lg:py-3 rounded ">
                     2
                   </button>
-                  <button className="border px-4 lg:px-6 py-2 lg:py-3 rounded ">
+                  <button className="border px-4 lg:px-5 py-2 lg:py-3 rounded ">
                     +
                   </button>
-                  <button className="btnLogin">Buy Now</button>
+                  <button className="btnLogin px-5 py-2">Buy Now</button>
                   <Image className="cursor-pointer" src={loveImg} />
                 </div>
               </div>

@@ -2,33 +2,35 @@ import Link from 'next/link'
 import React from 'react'
 
 const Sidebar = () => {
+   
+
     const SideBarMenu = [
         {
-            name:'Woman’s Fashion', link: '/'
+            name:'Woman’s Fashion', link: '/woman'
         },
         {
-            name:'Men’s Fashion', link: '/'
+            name:'Men’s Fashion', link: '/shop'
         },
         {
-            name:'Electronics', link: '/'
+            name:'Electronics', link: '/shop'
         },
         {
-            name:'Home & Lifestyle', link: '/'
+            name:'Home & Lifestyle', link: '/shop'
         },
         {
-            name:'Medicine', link: '/'
+            name:'Medicine', link: '/shop'
         },
         {
-            name:'Sports & Outdoor', link: '/'
+            name:'Sports & Outdoor', link: '/shop'
         },
         {
-            name:'Baby’s & Toys', link: '/'
+            name:'Baby’s & Toys', link: '/shop'
         },
         {
-            name:'Groceries & Pets', link: '/'
+            name:'Groceries & Pets', link: '/shop'
         },
         {
-            name:'Health & Beauty', link: '/'
+            name:'Health & Beauty', link: '/shop'
         }
     ]
   return (

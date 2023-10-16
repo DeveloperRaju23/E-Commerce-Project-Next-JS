@@ -24,3 +24,26 @@
    backdrop-filter: blur(35px);
    color: #fff;
 }
+
+.swiper-pagination-bullet{
+   width: 14px !important;
+   height: 14px !important; 
+   border: 2px solid #fff !important;
+   opacity: 100% !important;
+   background: #808080 !important;
+ }
+ .swiper-pagination-bullet-active{
+     background: #DB4444 !important;
+     border: none !important;
+ }
+ .swiper{
+   padding-bottom: 0px !important;
+ }
+ 
+ .swiper-slide.swiper-slide-next h4,
+ .swiper-slide.swiper-slide-next p{
+   color: #fff !important;
+ }
+ .swiper-pagination{
+   top: 90% !important;
+ }

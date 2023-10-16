@@ -3,10 +3,10 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Hero from '@/Components/Home/Hero/Hero'
 import Category from '@/Components/Home/Category/Category'
-import DateData from '@/Components/Home/FlashSales/DateData'
 import Arrival from '@/Components/Home/Arrival/Arrival'
 import Delivery from '@/Components/Home/Delivery/Delivery'
-
+import FlashSales from "@/Components/Home/FlashSales/FlashSales"
+import BestSelling from '@/Components/Home/BestSelling/BestSelling'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -22,10 +22,13 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
   <div>
       <Hero/>
+      <FlashSales/>
       <Category/>
-      <DateData/>
+      <BestSelling/>
       <Arrival/>
       <Delivery/>
+
+    
   </div>
       </main>
     </>

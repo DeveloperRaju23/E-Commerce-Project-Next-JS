@@ -10,9 +10,11 @@ import socialImg2 from "../../public/twitter.png";
 import socialImg3 from "../../public/instragram.png";
 import socialImg4 from "../../public/linkdin.png";
 import Image from "next/image";
+import ScrollTop from "../ScrollTop/ScrollTop";
 const Footer = () => {
   return (
     <div className="bg-blackColor mt-[40px]">
+      
       <Container>
         <footer className="">
           <div className=" pt-[60px] mb-[80px] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -99,6 +101,7 @@ const Footer = () => {
           </div>
         </footer>
       </Container>
+      <ScrollTop/>
     </div>
   );
 };

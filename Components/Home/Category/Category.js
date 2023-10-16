@@ -23,12 +23,12 @@ const Category = () => {
     },
     {
       "name":'HeadPhones',
-      "image":"https://i.ibb.co/sHZNpLS/Category-Headphone.png"
+      "image":"https://i.ibb.co/sHZNpLS/Category-Headphone.png",
     },
     {
       "name":'Gaming',
-      "image":"https://i.ibb.co/LCBVc3g/Category-Gamepad.png"
-    },
+      "image":"https://i.ibb.co/LCBVc3g/Category-Gamepad.png",
+  }
   ];
 
   return (

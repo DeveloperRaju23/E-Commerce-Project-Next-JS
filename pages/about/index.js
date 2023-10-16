@@ -129,7 +129,7 @@ const About = () => {
                  <div className='flex justify-center'>
                  <img src={item.img} alt="" />
                  </div>
-                   <h3 className="text-[26px] lg:text-[32px] text-blackColor font-medium mt-[8px]">{item?.name}</h3>
+                   <h3 className="text-[26px] lg:text-[30px] text-blackColor font-medium mt-[8px]">{item?.name}</h3>
                     <p className='text-[16px] text-blackColor tracking-wider mb-[10px]'>{item.title}</p>
                     <p className='text-[18px] lg:px-[35px] px-[10px] tracking-widest font-[400] leading-[25px] text-[#aaa1a1cc]'>{item.desc}</p>
                 </div>

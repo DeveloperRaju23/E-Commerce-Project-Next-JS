@@ -1,19 +1,23 @@
 import Container from "@/pages/container";
 import Link from "next/link";
 import React, { useState } from "react";
-import { BiLogOut, BiSearch, BiUser } from "react-icons/bi";
+import { BiSearch, BiUser } from "react-icons/bi";
 import {
   AiOutlineHeart,
   AiOutlineShoppingCart,
   AiOutlineStar,
 } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
-import { MdOutlineCancel } from "react-icons/md";
+import { MdLogin, MdOutlineCancel } from "react-icons/md";
 import userImg from "../../public/user.png";
 import Image from "next/image";
-
+import logo from "../../public/LOGO.png";
+import { useRouter } from "next/router";
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const router = useRouter();
+
+  const isActive = (path) => router.pathname === path;
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
@@ -22,34 +26,45 @@ const Header = () => {
   const MenuBar = [
     {
       name: "Home",
-      link: "/",
+      path: "/",
     },
     {
       name: "About",
-      link: "/about",
+      path: "/about",
     },
     {
       name: "Shop",
-      link: "/shop",
+      path: "/shop",
     },
     {
       name: "Contact",
-      link: "/contact",
+      path: "/contact",
     },
   ];
+
   return (
     <Container>
       <nav className="pt-[14px] pb-[14px]">
         <div className="container mx-auto flex justify-between items-center">
-          <div className=" font-bold text-xl">Logo</div>
+          <div className="text-2xl font-bold">
+            Logo
+            {/* <Image className="" src={logo}/> */}
+          </div>
           {/*============= MENU SECTION START ============== */}
           <div className="hidden md:block">
-            <div className="flex list-none space-x-6 ">
+            <div className="flex list-none space-x-6 text-[18px] font-normal">
               {MenuBar.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.link}>
-                    <p className="text-[18px] py-[5px]">{item.name}</p>
-                  </Link>
+                  <a
+                    className={`${
+                      router.pathname === item.path
+                        ? "text-secondaryRed font-bold"
+                        : "text-blackColor"
+                    }`}
+                    href={item.path}
+                  >
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </div>
@@ -65,42 +80,108 @@ const Header = () => {
               />
               <BiSearch className="h-6 w-6 absolute top-2 right-2" />
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block relative">
               <div className="flex space-x-[10px] items-center">
+                <span className="absolute -top-1 right-28 text-white h-5 w-5 flex items-center justify-center bg-secondaryRed rounded-full">
+                  4
+                </span>
                 <AiOutlineHeart className="w-[30px] h-[30px]" />
-                <AiOutlineShoppingCart className="w-[30px] h-[30px]" />
+                <Link href="cart">
+                  <AiOutlineShoppingCart className="w-[30px] h-[30px] " />
+                </Link>
+                <span className="absolute -top-1  right-16  text-white h-5 w-5 flex items-center justify-center bg-secondaryRed rounded-full">
+                  1
+                </span>
                 <div className="flex">
                   <div
                     onClick={toggleExpansion}
                     className="cursor-pointer flex"
                   >
                     <div className="  rounded-full mr-4">
-                      <Image className="w-[34px] h-[34px]" src={userImg} />
+                      <Image
+                        className="w-[38px] h-[38px]  ms-3"
+                        src={userImg}
+                      />
                     </div>
                   </div>
                   {isExpanded && (
-                    <div className="mt-4 absolute top-12 z-30 md:right-[1%] lg:right-[19.5%] w-[224px] h-[208px] rounded-[5px] header_blur  text-white">
+                    <div className="mt-4 absolute top-9 z-30 md:right-[1%] bg-blackColor lg:right-[5.7%] w-[224px] h-[208px] rounded-[5px] header_blur ">
                       <div className="flex flex-col space-y-[10px] text-[18px] ps-[5px] py-[14px]">
-                        <div class="flex items-center gap-[8px] ps-[5px]">
+                        <div className="flex items-center gap-[8px] ps-[5px]">
                           <BiUser className="h-[24px] w-[24px]" />
-                          <Link href="/">Manage My Account</Link>
+                          <Link href="myaccount">
+                            <p
+                              className={
+                                isActive("/myaccount")
+                                  ? " text-secondaryRed font-bold"
+                                  : "text-whiteColor"
+                              }
+                            >
+                              My Account
+                            </p>
+                          </Link>
                         </div>
-                        <div class="flex items-center gap-[8px] ps-[5px]">
+                        <div className="flex items-center gap-[8px] ps-[5px] ">
                           <BsBag className="h-[24px] w-[24px]" />
-                          <Link href="/">My Order</Link>
+                          <Link href="order">
+                            <p
+                              className={
+                                isActive("/order")
+                                  ? "text-secondaryRed font-bold "
+                                  : "text-whiteColor"
+                              }
+                            >
+                              My Order
+                            </p>
+                          </Link>
                         </div>
-                        <div class="flex items-center gap-[8px] ps-[5px]">
+                        <div className="flex items-center gap-[8px] ps-[5px]">
                           <MdOutlineCancel className="h-[24px] w-[24px]" />
-                          <Link href="/">My Cancellations</Link>
+                          <Link href="cancell">
+                            <p
+                              className={
+                                isActive("/cancell")
+                                  ? "text-secondaryRed font-bold "
+                                  : "text-whiteColor"
+                              }
+                            >
+                              My Cancellations
+                            </p>
+                          </Link>
                         </div>
-                        <div class="flex items-center gap-[8px] ps-[5px]">
+                        <div className="flex items-center gap-[8px] ps-[5px]">
                           <AiOutlineStar className="h-[24px] w-[24px]" />
-                          <Link href="/">My Reviews</Link>
+                          <Link href="reviews">
+                            <p
+                              className={
+                                isActive("/reviews")
+                                  ? "text-secondaryRed font-bold "
+                                  : "text-whiteColor"
+                              }
+                            >
+                              My Reviews
+                            </p>
+                          </Link>
                         </div>
-                        <div class="flex items-center gap-[8px] ps-[5px]">
+                        <div className="flex items-center gap-[8px] ps-[5px]">
+                          <MdLogin className="h-[24px] w-[24px]" />
+                          <Link href="login">
+                            <p
+                              className={
+                                isActive("/login")
+                                  ? "text-secondaryRed font-bold "
+                                  : "text-whiteColor"
+                              }
+                            >
+                              Login
+                            </p>
+                          </Link>
+                        </div>
+                        {/* <div className="flex items-center gap-[8px] ps-[5px]">
                           <BiLogOut className="h-[24px] w-[24px]" />
                           <Link href="/">Logout</Link>
-                        </div>
+                        </div> */}
+
                         {/*<Link href="/">SignUp</Link> */}
                       </div>
                     </div>
