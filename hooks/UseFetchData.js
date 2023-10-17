@@ -10,9 +10,7 @@ const UseFetchData = () => {
         .then(data => setProduct(data))
     },[])
 
-  return (
-    products
-  )
+  return [ products]
 }
 
 export default UseFetchData

@@ -6,20 +6,20 @@ import CategoryTabs from "./CategoryTabs";
 const Category = () => {
   const categories = [
     {
-      "name":'Phones',
-      "image":"https://i.ibb.co/VSKMKFr/Category-Cell-Phone.png"
+      name: "Phones",
+      image: "https://i.ibb.co/VSKMKFr/Category-Cell-Phone.png",
     },
     {
-      "name":'Computer',
-      "image":"https://i.ibb.co/vDjPz97/Category-Computer.png"
+      name: "Computer",
+      image: "https://i.ibb.co/vDjPz97/Category-Computer.png",
     },
     {
-      "name":'SmartWatch',
-      "image":"https://i.ibb.co/CHk5MFR/Category-Smart-Watch.png"
+      name: "SmartWatch",
+      image: "https://i.ibb.co/CHk5MFR/Category-Smart-Watch.png",
     },
     {
-      "name":'Camera',
-      "image":"https://i.ibb.co/bQztdvc/camera.png"
+      name: "Camera",
+      image: "https://i.ibb.co/bQztdvc/camera.png",
     },
     {
       "name":'HeadPhones',
@@ -38,7 +38,7 @@ const Category = () => {
         <ReuseTitle heading5="Categories" />
         <ReuseTitle heading3="Browse By Category" />
         <div>
-        <CategoryTabs categories={categories} />
+          <CategoryTabs categories={categories} />
         </div>
         <p className="border "></p>
       </div>

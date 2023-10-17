@@ -3,7 +3,7 @@ import Container from '../container'
 import Image from 'next/image'
 import callImg from "../../public/icons-phone.png"
 import emailImg from "../../public/icons-mail.png"
-import MapLocation from './mapLocation'
+
 const Contact = () => {
   return (
     <Container>
@@ -26,22 +26,39 @@ const Contact = () => {
               <p className='mt-[10px] text-[14px] text-blackColor font-normal tracking-wide'>Emails: support@exclusive.com</p>
              
           </div>
-          
-          <div className='lg::w-[750px] w-full  shadow-md rounded-md px-[30px] py-[30px]'>
-           <div className='flex flex-col sm:flex-row gap-[10px] justify-between'>
-           <input className='bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]' type="text" placeholder='Your Name ' />
-            <input className='bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]' type="text" placeholder='Your Email * ' />
-            <input className='bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]' type="text" placeholder='Your Phone * ' />
-            
-           </div>
-           <textarea className='bg-grayColor outline-none w-full mt-[20px] rounded-[5px] ps-[15px] pt-[10px]' placeholder='Your Massage' name="" id="" cols="30" rows="10"></textarea>
-
-           <button className='btnLogin mt-[15px]'>Send Massage</button>
+          <div className="lg::w-[750px] w-full  shadow-md rounded-md px-[30px] py-[30px]">
+          <div className="flex flex-col sm:flex-row gap-[10px] justify-between">
+            <input
+              className="bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]"
+              type="text"
+              placeholder="Your Name "
+            />
+            <input
+              className="bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]"
+              type="text"
+              placeholder="Your Email * "
+            />
+            <input
+              className="bg-grayColor w-full outline-none py-[14px] rounded-[5px] ps-[15px]"
+              type="text"
+              placeholder="Your Phone * "
+            />
           </div>
+          <textarea
+            className="bg-grayColor outline-none w-full mt-[20px] rounded-[5px] ps-[15px] pt-[10px]"
+            placeholder="Your Massage"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+         <button className="btnLogin mt-[15px]">Send Massage</button>
         </div>
-        {/* <MapLocation/> */}
+        </div>
+
     </Container>
   )
 }
 
-export default Contact
+export default Contact;

@@ -95,9 +95,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="py-[10px]">
-          <p className="text-grayColor text-[16px] text-center tracking-widest">
-                © Copyright Raju 2023.All right reserved
-              </p>
+            <p className="text-grayColor text-[16px] text-center tracking-widest">
+              © Copyright Raju 2023.All right reserved
+            </p>
           </div>
         </footer>
       </Container>
